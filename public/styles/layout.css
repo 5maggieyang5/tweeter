@@ -25,12 +25,57 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
-.container {
+main.container {
     width: 450px;
-    text-align: center;
     background-color: white;
     margin: 0 auto;
     padding-top: 140px;
     height: 100%;
 }
 
+article.tweet header {
+  background-color: #eee;
+  min-height: 80px;
+  padding: 6px;
+}
+
+
+article.tweet {
+  border: 1px solid #a9a8a8;
+  border-radius: 5px;
+  margin: 0 2em 1em 2em;
+  min-height: 100px;
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+article:hover {
+  opacity: 1;
+}
+article.tweet header img {
+  float: left;
+  border-radius: 5px;
+  margin: 6px;
+}
+
+div.author {
+  float: left;
+  padding-left: 5px;
+  padding-top: 10px;
+  font-weight: 700;
+}
+
+div.handler {
+  float: right;
+  margin: 10px;
+}
+
+
+article.tweet footer {
+  border-top: #eee 1px solid;
+  padding: 10px;
+}
+
+article.tweet .tweet-body {
+  padding: 10px;
+}
