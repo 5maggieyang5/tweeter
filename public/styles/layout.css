@@ -52,6 +52,10 @@ main.container {
   opacity: 1;
 }
 
+.tweet:hover .icons {
+  display: block;
+}
+
 .tweet header img {
   float: left;
   border-radius: 5px;
@@ -76,4 +80,11 @@ main.container {
 
 .tweet-body {
   padding: 10px;
+  word-wrap: break-word;
 }
+
+.icons {
+  float: right;
+  display: none;
+}
+
