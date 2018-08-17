@@ -1,9 +1,9 @@
-textarea {
+.new-tweet textarea {
   padding: 5px;
   width: 100%;
 }
 
-form > span.counter {
+form > .counter {
   float: right;
 }
 
@@ -17,9 +17,9 @@ form > input {
 }
 
 .new-tweet {
-    padding: 0.5em 0.5em 2em 0.5em;
-    background-color: #eee;
-    border: 1px solid #a9a8a8;
-    border-radius: 5px;
-    margin: 0 2em 1em 2em;
+  padding: 0.5em 0.5em 2em;
+  background-color: #eee;
+  border: 1px solid #a9a8a8;
+  border-radius: 5px;
+  margin: 0 2em 1em;
 }

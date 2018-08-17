@@ -5,15 +5,13 @@ $(document).ready(function() {
     var $textarea = $(this);
     var count = 140 - $textarea.val().length;
     var $counter = $textarea.siblings(".counter");
-    var countNum = $counter.text(count);
+    $counter.text(count);
 
     if (count < 0) {
-      countNum.css("color", "red");
+      $counter.css("color", "red");
     } else {
-      countNum.css("color", "black");
+      $counter.css("color", "black");
     }
 
   });
 });
-
-
