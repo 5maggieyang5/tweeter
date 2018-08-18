@@ -21,3 +21,12 @@
   font-size: 2em;
   line-height: 80px;
 }
+
+#compose-button {
+  width: 80px;
+  height: 70px;
+  float: right;
+  border-radius: 5px;
+  border: 1.5px solid black;
+
+}

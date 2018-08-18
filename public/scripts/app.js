@@ -70,6 +70,12 @@ function loadTweets() {
 
 $(document).ready(function() {
   loadTweets();
+
+  $("#compose-button").on("click", function(event) {
+    $(".new-tweet").slideToggle();
+    $("#new-tweet-content").focus();
+  })
+
 });
 
 
