@@ -23,3 +23,11 @@ form > input {
   border-radius: 5px;
   margin: 0 2em 1em;
 }
+
+#error-msg {
+  padding: 1em;
+  border-radius: 5px;
+  border: 1px solid #a9a8a8;
+  background-color: #dc2525;
+  display: none;
+}
