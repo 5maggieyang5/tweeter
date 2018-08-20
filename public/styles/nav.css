@@ -23,10 +23,12 @@
 }
 
 #compose-button {
-  width: 80px;
-  height: 70px;
+  width: 100px;
+  height: 60px;
   float: right;
   border-radius: 5px;
   border: 1.5px solid black;
-
+  margin: 10px;
+  color: #00a087;
 }
+

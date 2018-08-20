@@ -7,9 +7,9 @@
 
 //convert ms to days **this function was edit from https://gist.github.com/flangofas/714f401b63a1c3d84aaa**
 function findDaysAgo(ms) {
-  var days, total_hours, total_minutes, total_seconds;
-  var todayDateINms = new Date().getTime();
-  var msAgo = todayDateINms - ms;
+  let days, total_hours, total_minutes, total_seconds;
+  let todayDateINms = new Date().getTime();
+  let msAgo = todayDateINms - ms;
 
   total_seconds = parseInt(Math.floor(msAgo / 1000));
   total_minutes = parseInt(Math.floor(total_seconds / 60));
@@ -54,8 +54,8 @@ function createTweetElement (tweetData) {
 };
 
 function renderTweets(tweets) {
-  for (var tweetData of tweets) {
-    var $tweet = createTweetElement(tweetData);
+  for (let tweetData of tweets) {
+    const $tweet = createTweetElement(tweetData);
     $("#tweets-container").append($tweet);
   }
 }
