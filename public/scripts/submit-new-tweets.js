@@ -1,4 +1,7 @@
+"use strict";
+
 $(document).ready(function() {
+
   $("#new-tweet-content").on("click", function(event){
     $("#error-msg").slideUp();
   });
@@ -19,4 +22,5 @@ $(document).ready(function() {
       });
     }
   });
+
 });

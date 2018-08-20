@@ -1,3 +1,5 @@
+"use strict";
+
 $(document).ready(function() {
   // --- our code goes here ---
   $(".new-tweet textarea").keyup(function (){

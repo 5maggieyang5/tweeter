@@ -1,3 +1,4 @@
+"use strict";
 /*
  * Client-side JS logic goes here
  * jQuery is already loaded
@@ -15,7 +16,7 @@ function findDaysAgo(ms) {
   total_hours = parseInt(Math.floor(total_minutes / 60));
   days = parseInt(Math.floor(total_hours / 24));
 
-  return days;
+  return days < 0 ? 0 : days;
 };
 
 function createTweetElement (tweetData) {
@@ -34,23 +35,20 @@ function createTweetElement (tweetData) {
   let $retweetIcon = $("<i>").addClass("fas fa-retweet");
   let $likeIcon    = $("<i>").addClass("fas fa-heart");
 
-
   $tweet.append($header);
+    $header.append($img);
+    $header.append($author);
+    $header.append($handler);
+
   $tweet.append($tweetBody);
+    $tweetBody.append($littleTweet);
+
   $tweet.append($footer);
-
-  $header.append($img);
-  $header.append($author);
-  $header.append($handler);
-
-  $tweetBody.append($littleTweet);
-
-  $footer.append($time);
-  $footer.append($icons);
-
-  $icons.append($flagIcon);
-  $icons.append($retweetIcon);
-  $icons.append($likeIcon);
+    $footer.append($time);
+    $footer.append($icons);
+      $icons.append($flagIcon);
+      $icons.append($retweetIcon);
+      $icons.append($likeIcon);
 
   return $tweet;
 };
@@ -75,7 +73,6 @@ $(document).ready(function() {
     $(".new-tweet").slideToggle();
     $("#new-tweet-content").focus();
   })
-
 });
 
 
